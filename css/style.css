@@ -18,3 +18,14 @@ body, html {
 }
 
 .fa-anchor,.fa-coffee {font-size:200px}
+
+.fi-mintgreen,.fi-mintgreen:hover{color:#9CB697!important;background-color:#9CB697 !important}
+.fi-dark-green,.fi-dark-green:hover{color:#4D6F50!important;background-color:#4D6F50 !important}
+.fi-forest-green,.fi-forest-green:hover{color:#568028!important;background-color:#568028 !important}
+.fi-deep-purple,.fi-deep-purple:hover{color:#371B14!important;background-color:#371B14 !important}
+.fi-med-purple,.fi-med-purple:hover{color:#88476E!important;background-color:#88476E !important}
+.fi-light-rose,.fi-light-rose:hover{color:#C387A1!important;background-color:#C387A1 !important}
+.fi-peach,.fi-peach:hover{color:#EEBBA4!important;background-color:#EEBBA4 !important}
+.fi-hot-pink,.fi-hot-pink:hover{color:#DE447A!important;background-color:#DE447A !important}
+.fi-yellow,.fi-yellow:hover{color:#EFE65A!important;background-color:#EFE65A !important}
+.fi-khaki,.fi-khaki:hover{color:#FFE9B3!important;background-color:#FFE9B3 !important}

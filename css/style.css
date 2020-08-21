@@ -9,7 +9,8 @@ body, html {
 .bgimg-1 {
   background-position: center;
   background-size: cover;
-  background-image: url("../images/AdobeStock_163621386_Preview.jpeg");
+  /*background-image: url("../images/AdobeStock_163621386_Preview.jpeg");*/
+  background-image: url("../images/adobe_banner_top_gradient");
   min-height: 100%;
 }
 

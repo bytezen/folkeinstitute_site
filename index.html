@@ -8,7 +8,7 @@
 	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
   <script src="https://kit.fontawesome.com/74befc0553.js" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
 
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="16x16">
   <link rel="icon" type="image/png" href="images/favicon.png" sizes="32x32">
@@ -28,7 +28,27 @@ body, html {
   background-position: center;
   background-size: cover;
   /*background-image: url("../images/AdobeStock_163621386_Preview.jpeg");*/
-  background-image: url("images/adobe_banner_top_gradient1200.png");
+  /*background-image: url("images/adobe_banner_top_gradient1200.png");*/
+  background-image: url("images/banner_sunset.png");
+  min-height: 75%;
+}
+
+.bgimg-2 {
+  background-position: center;
+  background-size: cover;
+  /*background-image: url("../images/AdobeStock_163621386_Preview.jpeg");*/
+  /*background-image: url("images/adobe_banner_top_gradient1200.png");*/
+  background-image: url("images/banner_sunset2.png");
+  min-height: 75%;
+}
+
+
+.bgimg-3 {
+  background-position: center;
+  background-size: cover;
+  /*background-image: url("../images/AdobeStock_163621386_Preview.jpeg");*/
+  /*background-image: url("images/adobe_banner_top_gradient1200.png");*/
+  background-image: url("images/banner_sunset3.png");
   min-height: 75%;
 }
 
@@ -38,16 +58,7 @@ body, html {
 
 .fa-anchor,.fa-coffee, .fontawesome-large {font-size:200px}
 
-/*.fi-mintgreen,.fi-mintgreen:hover{color:#9CB697!important;background-color:#9CB697 !important}
-.fi-dark-green,.fi-dark-green:hover{color:#4D6F50!important;background-color:#4D6F50 !important}
-.fi-forest-green,.fi-forest-green:hover{color:#568028!important;background-color:#568028 !important}
-.fi-deep-purple,.fi-deep-purple:hover{color:#371B14!important;background-color:#371B14 !important}
-.fi-med-purple,.fi-med-purple:hover{color:#88476E!important;background-color:#88476E !important}
-.fi-light-rose,.fi-light-rose:hover{color:#C387A1!important;background-color:#C387A1 !important}
-.fi-peach,.fi-peach:hover{color:#EEBBA4!important;background-color:#EEBBA4 !important}
-.fi-hot-pink,.fi-hot-pink:hover{color:#DE447A!important;background-color:#DE447A !important}
-.fi-yellow,.fi-yellow:hover{color:#EFE65A!important;background-color:#EFE65A !important}
-.fi-khaki,.fi-khaki:hover{color:#FFE9B3!important;background-color:#FFE9B3 !important}*/
+
 
 
 .fi-mintgreen,.fi-hover-mintgreen:hover{color:#fff!important;background-color:#9CB697 !important}
@@ -107,8 +118,8 @@ h1 { color:#371B14!important; } /* deep purple */
 #navLogo {
   background-position: center;
   background-size: cover;
-  background-image: url("images/logo_60.png");
-  min-height: 100%;
+  background-image: url("images/nav_logo1.png");
+  max-height: 90%;
 
 }
 
@@ -119,12 +130,12 @@ h1 { color:#371B14!important; } /* deep purple */
 .fi-transparent-light-rose { background-color: rgba(195,135,161,0.6); } /* forest green */
 
 /* Full height image header */
-#contact {
+footer {
   background-position: center;
   background-size: cover;
   /*background-image: url("../images/AdobeStock_163621386_Preview.jpeg");*/
   background-image: url("images/adobe_banner_footer_75opacity.png");
-  min-height: 10%;
+  /*min-height: 10%;*/
 }
 
 </style>
@@ -136,7 +147,9 @@ h1 { color:#371B14!important; } /* deep purple */
   <!-- /////////////////////////////////////// -->
   <div class="w3-top">
     <div class="w3-bar w3-light-grey w3-card" id="myNavbar" >
-      <a href="#home" class="w3-bar-item w3-button w3-wide fi-text-deep-purple" id="navLogo">TFI</a></a>
+     <!--  <div class="w3-padding-left _w3-left w3-hide-small">
+        <a href="#home" class="w3-bar-item w3-button w3-wide fi-text-deep-purple" id="navLogo">HOME</a>
+      </div> -->
       <!-- <a href="#home" class="w3-bar-item w3-button _w3-wide w3-hide-small" > -->      
       <!-- <a href="home" class="w3-bar-item id="navLogo" >  
         <img src="images/logo_60.png"/>
@@ -178,25 +191,33 @@ h1 { color:#371B14!important; } /* deep purple */
   <!-- //////////////////////////////////////// -->
   <!--         HEADER WITH FULL HEIGHT IMAGE    -->
   <!-- //////////////////////////////////////// -->
-  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-    <div class="w3-display-left w3-text-white" style="padding:48px">
-      <span class="w3-jumbo w3-hide-small">The Folke Institute</span><br>
-      <span class="w3-xxlarge w3-hide-large w3-hide-medium">The Folke Institute</span><br>
-      <span class="w3-xlarge">Supporting Transformation...Sustaining Life</span>
+  <header class="bgimg-3 w3-display-container _w3-grayscale-min" id="home">
 
-      <!-- CTA button on banner image -->
-      <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->
+    <div class="_w3-container w3-text-white" style="margin-right: 50%;  padding-top: 200px;">
+     <!--  <div class="w3-round-xlarge" style="background-color: #2d1f17cf;">
+        <p class="w3-jumbo w3-hide-small" style="font-size: 100px">
+          The Folke Institute <br/>
+          <span class="w3-xlarge">Supporting Transformation...SustainingLife</span>
+        </p>
+
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">The Folke Institute</span><br>
+        <!-- <p class="w3-xlarge">Supporting Transformation...Sustaining Life</p> -->
+
+        <!-- CTA button on banner image -->
+        <!-- <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and start today</a></p> -->        
+      </div> -->
+
     </div> 
 
     <!--    SOCIAL ICONS      -->
-    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+ <!--    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
       <i class="fa fa-facebook-official w3-hover-opacity"></i>
       <i class="fa fa-instagram w3-hover-opacity"></i>
       <i class="fa fa-snapchat w3-hover-opacity"></i>
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
+    </div> -->
   </header>
   <!-- end header with full height -->
 
@@ -444,8 +465,10 @@ In a world where human resources are the only sustainable source of competitive 
     </div>
 
     <div class="w3-third w3-center">
-      <!-- <img src="images/carrie.jpg"></img> -->
-      <i class="fa fa-user fontawesome-large w3-padding-64 fi-text-mintgreen _w3-text-red"></i>
+      <div class="w3-container w3-center w3-padding-64">
+        <img src="images/TFI_250.png"></img>
+      <!-- <i class="fa fa-user fontawesome-large w3-padding-64 fi-text-mintgreen _w3-text-red"></i> -->
+      </div>
     </div>
   </div>
 </div>
@@ -454,13 +477,13 @@ In a world where human resources are the only sustainable source of competitive 
 
 <!-- Contact Section -->
 <!-- <div class="bgfooter-1 w3-container w3-light-gray bgimg-1 " style="padding:128px 16px" id="contact"> -->
-  <div class="w3-container w3-text-white "  id="contact">
-  <h1 class="w3-center w3-text-white">CONTACT</h1>
-  <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+  <div class="w3-container w3-light-gray fi-text-deep-purple   "  id="contact">
+  <h1 class="w3-center ">CONTACT</h1>
+  <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
   <div class="_w3-light-gray _w3-opacity" style="margin-top:48px">
-    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Chicago, US</p>
-    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
-    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> P.O. Box 204, High Bridge, NJ 08829</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: (908) 335-8156 (o); (908) 310-8779 (m)</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: clspell at thefolkeinstitute dot com</p>
     <br>
  <!--    <form action="/action_page.php" target="_blank">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
@@ -484,11 +507,11 @@ In a world where human resources are the only sustainable source of competitive 
   <a href="#home" class="w3-button w3-dark-grey fi-hover-med-purple">
     <i class="fa fa-arrow-up w3-margin-right "></i>To the top</a>
   <div class="w3-xlarge w3-section">
-    <i class="fa fa-facebook-official"></i>
+<!--     <i class="fa fa-facebook-official"></i>
     <i class="fa fa-instagram w3-hover-opacity"></i>
     <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> -->
     <i class="fa fa-linkedin w3-hover-opacity"></i>
   </div>
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>

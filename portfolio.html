@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.JS</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://www.w3schools.com/lib/w3.js"></script>
+  <body>
+
+    <table id="id01" class="w3-table w3-bordered w3-striped">
+      <tr>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Date</th>
+        <th>Link</th>
+        <th>Type</th>
+
+      </tr>
+      <tr w3-repeat="db">
+        <td>{{title}}</td>
+        <td>{{description}}</td>
+        <td>{{date}}</td>
+        <td><a href="{{link}}">{{linkName}}</a></td>
+        <td>{{type}}</td>
+      </tr>
+    </table>
+
+    <script>
+    w3.getHttpObject("portfolio.js", myFunction);
+
+    function myFunction(myObject) {
+      console.log(myObject);
+
+      for(var i=0; i < myObject.db.length; i++) {
+        var o = myObject.db[i];
+
+        if(o.year != null) {
+          if(o.day == null) {
+            o.date = o.month 
+              + "/" 
+              + o.year;
+          } else {
+            o.date = 
+              o.month 
+              + "/" 
+              + o.day 
+              + "/" 
+              + o.year;
+          }
+        }
+        
+        if(o.type == "article") {
+          o.link = myObject.config.article_path +"/" + o.link;
+        }
+      }
+      
+      w3.displayObject("id01", myObject);
+    }
+
+    </script>
+
+  </body>
+</html>

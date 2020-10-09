@@ -335,6 +335,16 @@
         </div>
       </div>
     </div>
+
+    <div class="w3-center w3-padding-64">
+       <!--  <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">Recent Work</span> -->
+      <button class="w3-button w3-xlarge fi-hover-med-purple fi-text-med-purple w3-hover-text-light-gray  _fi-hover-forest-green" onClick="navigateTo('portfolio.html')" type="submit">
+        <i class="fa fa-plus _fa-paper-plane "></i> 
+        More
+      </button>     
+      
+    </div>
+
   </div>
 
 
@@ -391,9 +401,10 @@
         <br/>
       </p> -->
 
-      <button class="w3-button fi-hover-med-purple fi-text-med-purple w3-hover-text-light-gray  _fi-hover-forest-green" onClick="navigateTo('whatwedo.html')" type="submit">
-        <i class="fa fa-plus _fa-paper-plane "></i> MORE
-      </button>      
+      <button class="w3-button w3-xlarge fi-hover-med-purple fi-text-med-purple w3-hover-text-light-gray  _fi-hover-forest-green" onClick="navigateTo('portfolio.html')" type="submit">
+        <i class="fa fa-plus _fa-paper-plane "></i> 
+        More
+      </button>          
     </div>
   </div>
 </div>
@@ -402,35 +413,32 @@
 
 <!-- First Grid -->
 <div class="w3-row-padding w3-padding-64 w3-container">
+
   <div class="w3-content">
+
     <div class="w3-twothird">
       <h1>Who We Are</h1>
       <h5 class="w3-padding-32 fi-text-mintgreen">The Folke Institute is a consulting, research and training firm that develops, designs, and deploys programs to help individuals and organizations acquire the skills and insights needed to achieve success in today’s global workplace.</h5>
 
       <p class="w3-text-grey">
-
-In a world where human resources are the only sustainable source of competitive advantage, success depends on the ability to excel in multicultural environments. We enable individuals, teams, and organizations to transcend international and intercultural borders to compete on a global scale. Clients value our services in terms of measurable reduction to the costly misunderstanding and mistrust which often occur when people from diverse cultures work together. We work in corporate, academic, community and one-on-one sessions.</p>
-
-
-
-
-      <button class="w3-button fi-hover-med-purple fi-text-med-purple w3-hover-text-light-gray  _fi-hover-forest-green" onClick="navigateTo('whoweare.html')" type="submit">
-        <i class="fa fa-plus _fa-paper-plane "></i> MORE
-      </button>      
-
-<!-- <button class="w3-button w3-black" type="submit">
-  <i class="fa fa-paper-plane"></i> MORE
-</button> -->
-
+        In a world where human resources are the only sustainable source of competitive advantage, success depends on the ability to excel in multicultural environments. We enable individuals, teams, and organizations to transcend international and intercultural borders to compete on a global scale. Clients value our services in terms of measurable reduction to the costly misunderstanding and mistrust which often occur when people from diverse cultures work together. We work in corporate, academic, community and one-on-one sessions.
+      </p>
+      <button class="w3-button w3-xlarge fi-hover-med-purple fi-text-med-purple w3-hover-text-light-gray  _fi-hover-forest-green" onClick="navigateTo('portfolio.html')" type="submit">
+          <i class="fa fa-plus _fa-paper-plane "></i> 
+          More
+      </button>        
     </div>
 
-    <div class="w3-third w3-center">
+    <div class="w3-third w3-center w3-padding-16">
       <div class="w3-container w3-center w3-padding-64">
-        <img src="images/TFI_250.png"></img>
+        <!-- <img src="images/TFI_250.png"></img> -->
+        <img src="images/official_logo_300.png"></img>
       <!-- <i class="fa fa-user fontawesome-large w3-padding-64 fi-text-mintgreen _w3-text-red"></i> -->
       </div>
     </div>
+
   </div>
+
 </div>
 
 
@@ -447,43 +455,40 @@ In a world where human resources are the only sustainable source of competitive 
 </footer>
  
 
+<script>
+  w3.includeHTML();
+
+  // Modal Image Gallery
+  function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+  }
 
 
+  // Toggle between showing and hiding the sidebar when clicking the menu icon
+  var mySidebar = document.getElementById("mySidebar");
 
-  <script>
-    w3.includeHTML();
-
-    // Modal Image Gallery
-    function onClick(element) {
-      document.getElementById("img01").src = element.src;
-      document.getElementById("modal01").style.display = "block";
-      var captionText = document.getElementById("caption");
-      captionText.innerHTML = element.alt;
+  function w3_open() {
+    if (mySidebar.style.display === 'block') {
+      mySidebar.style.display = 'none';
+    } else {
+      mySidebar.style.display = 'block';
     }
+  }
 
+  // Close the sidebar with the close button
+  function w3_close() {
+      mySidebar.style.display = "none";
+  }
 
-    // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
+  // Button Navigation
+  function navigateTo(url) {
+    window.location.href = url;
 
-    function w3_open() {
-      if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-      } else {
-        mySidebar.style.display = 'block';
-      }
-    }
-
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-    }
-
-    // Button Navigation
-    function navigateTo(url) {
-      window.location.href = url;
-
-    }
-  </script>  
+  }
+</script>  
 
 </body>
 
